@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volkswagen - Povijest, Modeli i Inovacije</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Volkswagen</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">O Volkswagen-u</a></li>
+                    <li><a href="#models">Modeli</a></li>
+                    <li><a href="#technology">Tehnologija</a></li>
+                    <li><a href="#history">Povijest</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>O Volkswagen-u</h2>
+            <p>Volkswagen je vodeći njemački proizvođač automobila, poznat po svojim inovacijama, kvaliteti i povijesti. Osnovan 1937. godine, Volkswagen je postao simbol pouzdanosti i inženjerske izvrsnosti.</p>
+            <button onclick="toggleMoreInfo()">Saznaj više</button>
+            <div id="more-info" style="display:none;">
+                <p>Volkswagen danas nudi širok spektar vozila, uključujući električne modele, luksuzne automobile i SUV-ove. Sa svojim globalnim pristupom i velikim brojem modela, Volkswagen je postao jedan od najprepoznatljivijih automobilski brendova na svijetu.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="models">
+        <div class="container">
+            <h2>Popularni modeli</h2>
+            <p>Od klasičnih modela do novih električnih vozila, Volkswagen nudi širok raspon automobila za svaku potrebu.</p>
+
+            <div class="filter">
+                <label for="model-filter">Filtriraj modele: </label>
+                <select id="model-filter">
+                    <option value="all">Svi modeli</option>
+                    <option value="electric">Električni</option>
+                    <option value="suv">SUV</option>
+                    <option value="sedan">Sedan</option>
+                </select>
+            </div>
+
+            <div class="model-list">
+                <div class="model" data-category="electric">
+                    <h3>Volkswagen ID.4</h3>
+                    <p>Električni SUV s naprednim tehnološkim značajkama.</p>
+                </div>
+                <div class="model" data-category="sedan">
+                    <h3>Volkswagen Passat</h3>
+                    <p>Klasični sedan s vrhunskom udobnošću i performansama.</p>
+                </div>
+                <div class="model" data-category="suv">
+                    <h3>Volkswagen Tiguan</h3>
+                    <p>Popularni SUV s velikim prostorom i robusnim dizajnom.</p>
+                </div>
+                <div class="model" data-category="electric">
+                    <h3>Volkswagen ID.3</h3>
+                    <p>Kompaktni električni automobil s izvanrednim dosegom.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="technology">
+        <div class="container">
+            <h2>Tehnologija</h2>
+            <p>Volkswagen je predvodnik u uvođenju novih tehnologija, bilo da se radi o električnim vozilima, autonomnim vozilima ili naprednim sustavima za pomoć vozaču.</p>
+
+            <div class="tech-slider">
+                <div class="tech-item">
+                    <h3>Električna vozila</h3>
+                    <p>Volkswagen se okreće održivosti s novim generacijama električnih vozila poput ID.3 i ID.4.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Autonomna vožnja</h3>
+                    <p>U Volkswagen-u rade na autonomnim vozilima koja koriste najnoviju AI tehnologiju.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Infotainment sustavi</h3>
+                    <p>Napredni infotainment sustavi s digitalnim ekranima i glasovnim upravljanjem.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="history">
+        <div class="container">
+            <h2>Povijest Volkswagen-a</h2>
+            <p>Volkswagen je osnovan 1937. godine u Njemačkoj, a prvi model koji su proizveli bio je poznat kao "Volkswagen Beetle". Od tada, Volkswagen je postao globalna ikona u automobilskoj industriji, stalno inovirajući i prilagođavajući se potrebama tržišta.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Kontaktirajte nas</h2>
+            <form id="contact-form">
+                <label for="name">Ime</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Poruka</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Pošaljite</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Volkswagen. Sva prava pridržana.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
